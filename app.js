@@ -23,8 +23,10 @@ ul.addEventListener('click',function(event){
 
 ul.addEventListener('click',function(event){
     if(event.target.classList.contains('fa-pen-to-square')){
+        if(!event.target.parentElement.querySelector('#exists')) {
         let editForm = document.createElement('form');
         editForm.className = 'edit';
+        editForm.setAttribute('id','exists');
         let editTodo = document.createElement('input');
         let addEdit = document.createElement('button');
         editTodo.className = 'edit-input';
@@ -41,6 +43,7 @@ ul.addEventListener('click',function(event){
         event.target.parentElement.querySelector('.todo').innerText = '';
         let li = event.target.parentElement;
         li.appendChild(editForm);
+    }
     }
 })
 
