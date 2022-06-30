@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="nav-bar">To-do list</div>
+    <div id="todo-container">
+      <ul>
+        <li>
+          <input type="checkbox" class="check-box" />
+          <span class="todo">Clean windows</span>
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen-to-square"></i>
+        </li>
+        <li>
+          <input type="checkbox" class="check-box" />
+          <span class="todo">Throw trash</span>
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen-to-square"></i>
+        </li>
+        <li>
+          <input type="checkbox" class="check-box" />
+          <span class="todo">Go to the gym</span>
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen-to-square"></i>
+        </li>
+      </ul>
+      <form id="add-todo">
+        <input type="text" id="todo-text" placeholder="Add todo..." />
+        <button type="submit" class="add-todo">Add</button>
+      </form>
+      <div id="info">
+        Info: Click the checkboxes when you are done! Click again to undo. You
+        can also edit by clicking the pen icon.
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9ec8e4a069.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+div#nav-bar {
+  background-color: rgb(238, 150, 10);
+  padding: 30px;
+  color: white;
+  font-size: larger;
+}
+div#todo-container {
+  padding: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 6px lightgray;
+  margin: 20px;
+  font-family: Tahoma;
+  letter-spacing: 0.25mm;
+}
+li {
+  list-style-type: none;
+  border-left: 2px solid #eec124;
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 1em;
+}
+ul {
+  margin-bottom: 2em;
+}
+.fa-pen-to-square:hover {
+  color: #eec124;
+  cursor: pointer;
+}
+.fa-trash-can:hover {
+  color: red;
+}
+.check-box {
+  width: 20px;
+  margin-right: 2em;
+}
+.check-box:focus {
+  outline: 2px solid #eec124;
+  width: 20px;
+}
+form#add-todo {
+  margin: 50px 50px 0 50px;
+  padding: 0;
+}
+input#todo-text {
+  padding: 7px 20px;
+  font-family: Tahoma;
+  letter-spacing: 0.25mm;
+  margin: 0 auto;
+  border: 1.5px solid rgb(238, 70, 10);
+  border-radius: 2px;
+}
+input:focus {
+  outline: 4px solid lightblue;
+  border-radius: 2px;
+}
+button.add-todo {
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: 0px solid white;
+  background-color: rgb(238, 70, 10);
+  color: white;
+  cursor: pointer;
+}
+button.add-todo:hover {
+  background-color: rgb(238, 70, 10, 0.5);
+}
+
+/*on click styles*/
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: lightgreen;
+  color: rgb(89, 89, 89);
+}
+.fa-trash-can {
+  float: right;
+  cursor: pointer;
+  padding: 0 20px;
+}
+.fa-pen-to-square {
+  float: right;
+  padding: 0 20px;
+}
+div#info {
+  font-size: 0.9em;
+  margin-top: 50px;
+  color: gray;
+}
