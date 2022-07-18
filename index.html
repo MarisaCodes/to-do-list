@@ -10,28 +10,45 @@
   <body>
     <div id="nav-bar">To-do list Website</div>
     <div id="todo-container">
-      <ul>
+      <ul id="todo-ul">
         <li>
-          <input type="checkbox" class="check-box" />
-          <span class="todo">Clean windows</span>
-          <i class="fa-solid fa-trash-can"></i>
-          <i class="fa-solid fa-pen-to-square"></i>
+          <div>
+            <input type="checkbox" class="check-box" />
+            <span class="todo">Clean windows</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
         </li>
         <li>
-          <input type="checkbox" class="check-box" />
-          <span class="todo">Throw trash</span>
-          <i class="fa-solid fa-trash-can"></i>
-          <i class="fa-solid fa-pen-to-square"></i>
+          <div>
+            <input type="checkbox" class="check-box" />
+            <span class="todo">Throw trash</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
         </li>
         <li>
-          <input type="checkbox" class="check-box" />
-          <span class="todo">Go to the gym</span>
-          <i class="fa-solid fa-trash-can"></i>
-          <i class="fa-solid fa-pen-to-square"></i>
+          <div>
+            <input type="checkbox" class="check-box" />
+            <span class="todo">Go to gym</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
         </li>
       </ul>
-      <form id="add-todo">
-        <input type="text" id="todo-text" placeholder="Add todo..." />
+      <form autocomplete="off" id="add-todo">
+        <input
+          autocomplete="off"
+          type="text"
+          id="todo-text"
+          placeholder="Add todo..."
+        />
         <button type="submit" class="add-todo">Add</button>
       </form>
       <div id="info">
